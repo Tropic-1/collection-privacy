@@ -27,8 +27,8 @@
 
 <h2>What the app stores, and where</h2>
 <ul>
-  <li><b>Your collection</b>: sets, items, values, prices paid, conditions, dates, locations and notes you enter. This is stored only in the app's private storage on your phone.</li>
-  <li><b>Photos</b> you take with your phone's camera app, choose from your phone, or download from a link. The app makes a resized copy and keeps it in the app's private storage. It does not read your photo library (you pick each photo with the system picker) and it does not ask for camera permission: taking a photo opens your phone's own camera app, which hands the one photo back to Collection Tracker.</li>
+  <li><b>Your collection</b>: sets, items, values, prices paid, sellers, conditions, dates, locations, names of people you lent items to, and notes you enter. This is stored only in the app's private storage on your phone.</li>
+  <li><b>Photos and receipts</b> you take with your phone's camera app, choose from your phone, or download from a link. The app makes a resized copy and keeps it in the app's private storage. It does not read your photo library (you pick each photo with the system picker) and it does not ask for camera permission: taking a photo opens your phone's own camera app, which hands the one photo back to Collection Tracker.</li>
   <li><b>Service keys</b> (optional): if you enter keys for IGDB (Twitch Client ID and Secret), TMDB or Discogs to search for covers and prices, they are stored on your phone only and are left out of backup files the app creates.</li>
   <li><b>Barcodes</b>: when you scan a barcode, the app reads it from the photo on your phone and keeps only the number (with the item or as a search). The scan photo itself is not saved.</li>
 </ul>
@@ -47,6 +47,7 @@
       <li>Card pictures and prices: Scryfall (<code>api.scryfall.com</code>) and the Pokémon TCG API (<code>api.pokemontcg.io</code>)</li>
     </ul>
     Scanning a book's ISBN barcode looks the book up on Open Library in the same way. These services run under their own privacy policies.</li>
+  <li><b>Full checklists</b>: when you create a set from online, the app sends the set, author, artist or series name you search for to the same services, and downloads the list. Pictures in these sets load from those services when you view them, and each service sees your IP address like any website.</li>
   <li><b>Price links</b>: the "eBay sold" and "PriceCharting" buttons open those websites in your browser with the item's name as the search. The app itself sends nothing; your browser and those websites' own policies apply.</li>
 </ul>
 <p>All connections the app makes use encrypted HTTPS where the website supports it.</p>
@@ -56,6 +57,12 @@
   <li><b>Backup files</b>: "Back up" in the app saves a file containing your collection and photos to a place you choose (for example your phone's storage or a cloud drive app). You control that file.</li>
   <li><b>Automatic backups</b> (optional): if you choose a backup folder, the app saves a backup file there by itself every day or week and keeps the newest five. If that folder belongs to a cloud service (such as Google Drive or OneDrive), the files are stored by that service under your account and its privacy policy. You can turn this off at any time in Settings.</li>
   <li><b>Android backup</b>: if Android backup is turned on in your phone's settings, Android may include the app's data in your personal Google backup, as it does for most apps. This is handled by Google under your Google account; we have no access to it. You can turn it off in your phone's settings.</li>
+</ul>
+
+<h2>Reports and app lock</h2>
+<ul>
+  <li><b>Reports</b>: an insurance report is made on your phone and only goes where you save, print or send it.</li>
+  <li><b>App lock</b> (optional): uses your phone's own screen lock. The app never sees your fingerprint, face or PIN.</li>
 </ul>
 
 <h2>What we do not do</h2>
