@@ -21,7 +21,7 @@
 <body>
 <main>
 <h1>Privacy policy</h1>
-<p class="muted">Collection Tracker (Android app <code>com.tropicfields.collection</code>) · Effective 6 November 2026</p>
+<p class="muted">Collection Tracker (Android app <code>com.tropicfields.collection</code>) · Effective 5 November 2026</p>
 
 <p>Collection Tracker helps you keep track of the things you collect. It is built so that your collection stays on your phone. There is no account, no sign-in, no advertising and no analytics. We (the developer) do not receive, see or store any of your data.</p>
 
@@ -29,7 +29,8 @@
 <ul>
   <li><b>Your collection</b>: sets, items, values, prices paid, conditions, dates, locations and notes you enter. This is stored only in the app's private storage on your phone.</li>
   <li><b>Photos</b> you take with your phone's camera app, choose from your phone, or download from a link. The app makes a resized copy and keeps it in the app's private storage. It does not read your photo library (you pick each photo with the system picker) and it does not ask for camera permission: taking a photo opens your phone's own camera app, which hands the one photo back to Collection Tracker.</li>
-  <li><b>IGDB keys</b> (optional): if you enter a Twitch Client ID and Client Secret to search for game covers, they are stored on your phone only and are left out of backup files the app creates.</li>
+  <li><b>Service keys</b> (optional): if you enter keys for IGDB (Twitch Client ID and Secret), TMDB or Discogs to search for covers and prices, they are stored on your phone only and are left out of backup files the app creates.</li>
+  <li><b>Barcodes</b>: when you scan a barcode, the app reads it from the photo on your phone and keeps only the number (with the item or as a search). The scan photo itself is not saved.</li>
 </ul>
 <p>Uninstalling the app, or clearing its data in Android settings, deletes all of this from your phone.</p>
 
@@ -38,6 +39,14 @@
 <ul>
   <li><b>Picture from a link</b>: when you paste a link to a picture or web page, the app downloads it directly from that website. Like any download, the website receives your IP address and a standard request.</li>
   <li><b>Game covers (IGDB)</b>: when you search for a game cover, the app sends your Twitch Client ID and Secret to Twitch (<code>id.twitch.tv</code>) to log in, sends your search words to IGDB (<code>api.igdb.com</code>), and downloads the chosen cover from IGDB. These services are run by Twitch / Amazon under their own privacy policies.</li>
+  <li><b>Pictures and prices</b>: when you search for a picture or a value, the app sends your search words (or a saved item number to refresh a price) directly from your phone to the service you picked, and downloads the picture or price you choose:
+    <ul>
+      <li>Book covers: Open Library (<code>openlibrary.org</code>)</li>
+      <li>Album covers: MusicBrainz and the Cover Art Archive (<code>musicbrainz.org</code>, <code>coverartarchive.org</code>), and Discogs (<code>api.discogs.com</code>, with your own token)</li>
+      <li>Film and TV posters: TMDB (<code>api.themoviedb.org</code>, with your own key)</li>
+      <li>Card pictures and prices: Scryfall (<code>api.scryfall.com</code>) and the Pokémon TCG API (<code>api.pokemontcg.io</code>)</li>
+    </ul>
+    Scanning a book's ISBN barcode looks the book up on Open Library in the same way. These services run under their own privacy policies.</li>
   <li><b>Price links</b>: the "eBay sold" and "PriceCharting" buttons open those websites in your browser with the item's name as the search. The app itself sends nothing; your browser and those websites' own policies apply.</li>
 </ul>
 <p>All connections the app makes use encrypted HTTPS where the website supports it.</p>
@@ -45,6 +54,7 @@
 <h2>Backups</h2>
 <ul>
   <li><b>Backup files</b>: "Back up" in the app saves a file containing your collection and photos to a place you choose (for example your phone's storage or a cloud drive app). You control that file.</li>
+  <li><b>Automatic backups</b> (optional): if you choose a backup folder, the app saves a backup file there by itself every day or week and keeps the newest five. If that folder belongs to a cloud service (such as Google Drive or OneDrive), the files are stored by that service under your account and its privacy policy. You can turn this off at any time in Settings.</li>
   <li><b>Android backup</b>: if Android backup is turned on in your phone's settings, Android may include the app's data in your personal Google backup, as it does for most apps. This is handled by Google under your Google account; we have no access to it. You can turn it off in your phone's settings.</li>
 </ul>
 
@@ -64,7 +74,7 @@
 <h2>Contact</h2>
 <p>Questions about this policy: <a href="mailto:meridian.house.studios@gmail.com">meridian.house.studios@gmail.com</a></p>
 <hr>
-<p class="muted">Collection Tracker is an independent app. It is not affiliated with eBay, PriceCharting, Twitch or IGDB.</p>
+<p class="muted">Collection Tracker is an independent app. It is not affiliated with eBay, PriceCharting, Twitch, IGDB, Open Library, MusicBrainz, Discogs, TMDB, Scryfall or the Pokémon TCG API. This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
 </main>
 </body>
 </html>
