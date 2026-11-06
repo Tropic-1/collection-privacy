@@ -35,7 +35,7 @@
 <p>Uninstalling the app, or clearing its data in Android settings, deletes all of this from your phone.</p>
 
 <h2>When the app connects to the internet</h2>
-<p>The app only goes online when you ask it to:</p>
+<p>The app works without an internet connection. It only goes online when you ask it to, and <b>Offline mode</b> in Settings blocks every connection the app makes:</p>
 <ul>
   <li><b>Picture from a link</b>: when you paste a link to a picture or web page, the app downloads it directly from that website. Like any download, the website receives your IP address and a standard request.</li>
   <li><b>Game covers (IGDB)</b>: when you search for a game cover, the app sends your Twitch Client ID and Secret to Twitch (<code>id.twitch.tv</code>) to log in, sends your search words to IGDB (<code>api.igdb.com</code>), and downloads the chosen cover from IGDB. These services are run by Twitch / Amazon under their own privacy policies.</li>
@@ -47,8 +47,9 @@
       <li>Card pictures and prices: Scryfall (<code>api.scryfall.com</code>) and TCGdex (<code>api.tcgdex.net</code>)</li>
     </ul>
     Scanning a book's ISBN barcode looks the book up on Open Library in the same way. These services run under their own privacy policies.</li>
-  <li><b>Daily value updates</b> (can be turned off in Settings): once a day when you open the app, it asks those services for current prices of the items you got an online price for, using their item numbers. It also fetches exchange rates from Frankfurter (<code>api.frankfurter.dev</code>) so prices appear in your currency. None of this includes your collection list or any personal details.</li>
-  <li><b>Full checklists</b>: when you create a set from online, the app sends the set, author, artist or series name you search for to the same services, and downloads the list. Pictures in these sets load from those services when you view them, and each service sees your IP address like any website.</li>
+  <li><b>Exchange rates</b>: when you look up or update a price, the app fetches exchange rates from Frankfurter (<code>api.frankfurter.dev</code>) so prices appear in your currency. The request contains no details about you or your collection.</li>
+  <li><b>Daily value updates</b> (off unless you turn them on in Settings): once a day when you open the app, it asks those services for current prices of the items you got an online price for, using their item numbers. None of this includes your collection list or any personal details.</li>
+  <li><b>Full checklists</b>: when you create a set from online, the app sends the set, author, artist or series name you search for to the same services, and downloads the list. Pictures in these sets load from those services when you view them, and each service sees your IP address like any website, until you save the pictures to your phone.</li>
   <li><b>Price links</b>: the "eBay sold" and "PriceCharting" buttons open those websites in your browser with the item's name as the search. The app itself sends nothing; your browser and those websites' own policies apply.</li>
 </ul>
 <p>All connections the app makes use encrypted HTTPS where the website supports it.</p>
